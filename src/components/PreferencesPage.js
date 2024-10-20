@@ -250,7 +250,7 @@ import { useParams } from 'react-router-dom';
 
 const PreferencesPage = () => {
   const { token } = useParams(); // Extract token from the URL
-  const [availableTopics, setAvailableTopics] = useState(['', '', '', '', '']);
+  const [availableTopics, setAvailableTopics] = useState(['Stock1', 'Stock2', 'stock2', 'stock3', 'stock4']);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [searchTerm, setSearchTerm] = useState(''); // State for search input
   const [firstNews, setFirstNews] = useState(null); // State to hold the first news item
