@@ -12,11 +12,11 @@ const SignUpForm = () => {
 
     try {
       const response = await axios.post('http://localhost:3030/api/signup', { email });
-      setMessage(response.data);
+      setMessage(response.data); // Display the response message
       setEmail(''); // Clear the input field
     } catch (error) {
       if (error.response && error.response.data) {
-        setMessage(error.response.data);
+        setMessage(error.response.data); // Display error from the backend
       } else {
         setMessage('An error occurred. Please try again.');
       }
